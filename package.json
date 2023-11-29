@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha",
-    "start": "node src/server.js",
+    "start": "node src/server",
     "build": "npm run start"
   },
   "keywords": [],
