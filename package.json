@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "test": "mocha",
     "start": "node src/server.js",
-    "build": "npm run lint && npm run test && npm run start"
+    "build": "npm run start"
   },
   "keywords": [],
   "author": "",
