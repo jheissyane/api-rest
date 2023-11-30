@@ -30,4 +30,5 @@ app.use("/user", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server rodando na porta: ${PORT}`);
+  //a
 });
