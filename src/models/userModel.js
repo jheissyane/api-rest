@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-spacing */
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -12,7 +13,5 @@ const userSchema = new mongoose.Schema({
   data_atualizacao: { type: Date, default: Date.now, },
   ultimo_login: { type: Date, default: null },
 });
-
-
 
 module.exports = mongoose.model('User', userSchema);
