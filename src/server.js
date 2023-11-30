@@ -25,11 +25,11 @@ db.on("error", (err) => {
   console.error(`Erro na conexão ao MongoDB: ${err}`);
 });
 
-
 app.use(bodyParser.json());
 
 app.use("/auth", authRoutes);
 app.use("/user", userRoutes);
+app.get("/", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server rodando na porta: ${PORT}`);

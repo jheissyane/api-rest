@@ -9,4 +9,16 @@ const getUser = async (req, res) => {
   }
 };
 
-module.exports = { getUser };
+const inicio = async (req, res) => {
+  try {
+    res.json({ mensagem: 'Bem vindo a API de usuários' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+module.exports = { getUser, inicio };
+
+
+
+
